@@ -18,4 +18,16 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $("#formLetter").submit(function(event){
+    const firstNameInput = $("input#firstName").val();
+    const lastNameInput = $("input#lastName").val();
+
+    $(".firstName").text(firstNameInput);
+    $(".lastName").text(lastNameInput);
+
+    $("#letterBody").show();
+
+    event.preventDefault();
+  });
 });
