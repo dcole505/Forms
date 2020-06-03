@@ -30,4 +30,14 @@ $(document).ready(function() {
 
     event.preventDefault();
   });
+
+  $("#shoutingMachine").submit(function(event){
+    const userPhraseInput = ($("input#userPhrase").val()).toUpperCase();
+
+    $(".userPhrase").text(userPhraseInput);
+
+    $("#inputReturn").show();
+
+    event.preventDefault();
+  });
 });
