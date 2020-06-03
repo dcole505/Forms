@@ -5,3 +5,13 @@
 #letterBody {
   display: none;
 }
+
+.jumbotron {
+  background-color: darkgrey;
+}
+
+.card {
+  padding: 25px;
+  border: 1px dotted black;
+  border-radius: 10px;
+}
